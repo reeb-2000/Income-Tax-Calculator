@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Income Tax Department</h1>
+        <label for="name">Enter your Name: &#x3f;</label>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <label for="grossIncome">Enter gross annual income: &#x3f;</label>
+        <input type="number" id="grossIncome" placeholder="Gross Annual Income" required>
+        <label for="extraIncome">Enter Extra income: &#x3f;</label>
+        <input type="number" id="extraIncome" placeholder="Extra Income" required>
+        <label for="deduction">Enter total applicable deduction: &#x3f;</label>
+        <input type="number" id="deduction" placeholder="Total Deduction" required>
+        <label for="age">Select the age group: &#x3f;</label>
+        <select id="age">
+            <option value="under40">&lt; 40</option>
+            <option value="between40and60">&ge; 40 &amp; &lt; 60</option>
+            <option value="over60">&ge; 60</option>
+        </select>
+        <button onclick="calculateTax()">Calculate Tax</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
